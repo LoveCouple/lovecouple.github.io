@@ -106,7 +106,7 @@ serein deploy
 
 3. 添加你的行为包
 
-   ![addons](/home/caimeo/Desktop/wechat/load.png)
+   ![addons](load.png)
 
 4. 打开实验功能（**Beta APIs experiment**）
 
