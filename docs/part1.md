@@ -66,13 +66,13 @@ serein init
 
 ​	自动打包项目，保存到 `build/` 目录下
 
-![pack](./pack.png)
+![pack](/pack.png)
 
 #### deploy
 
 ​	自动部署到游戏路径（Development），会根据不同平台自动处理（包括Linux/Android/Windows）
 
-![deploy](./deploy.png)
+![deploy](/deploy.png)
 
 ### 测试流程
 
@@ -106,7 +106,7 @@ serein deploy
 
 3. 添加你的行为包
 
-   ![addons](load.png)
+   ![addons](/load.png)
 
 4. 打开实验功能（**Beta APIs experiment**）
 
@@ -118,7 +118,7 @@ serein deploy
 [Script Engine] hello
 ```
 
-![hello](./hello.png)
+![hello]/hello.png)
 
 ​	其它测试技巧：
 
@@ -396,8 +396,7 @@ const ellipse = (a: number, b: number) => V3(a, b).filter(P => inEllipse(P,a,b))
 > <p align="right">--- Lampese</p>
 
 ​	函数复用非常优雅，我们可以轻而易举地定义很多不同的几何函数，只需要知道它的方程。不过，这并不是终点，读者应该注意到了，我们的程序还有很多相似之处，为什么不再进一步抽象呢？
-
-<img src="./power.png" alt="还能再给力一点吗？" style="zoom:150%;" />
+![还能再给力一点吗](/power.png)
 
 ​	我们再观察对比一下这几个定义：
 
@@ -471,7 +470,7 @@ const ellipse = (a: number, b: number) => gen(V3(a, b),inEllipse(a,b));
 
 ​	抽象似乎已经达到极限了，我们还能进一步扩展我们的程序吗？
 
-<img src="./power.png" alt="还能再给力一点吗？" style="zoom:150%;" />
+![还能再给力一点吗](/power.png)
 
 ​	答案是有，别忘了我们的核心是体素几何，如果只支持圆、球、椭圆，那限制也太大了。在初中我们就学过，在笛卡尔坐标系中，一个包含 $x,y,z$ 的方程、不等式可以表示一个结构，比如上文的球：
 $$
@@ -546,8 +545,7 @@ const scale = (t: number) => (space: Space) => space.map(({ x, y, z }) => new Po
 
 ​	普通方程可以代表绝大多数的几何结构，不过我们还没到终点。
 
-<img src="./power.png" alt="还能再给力一点吗？" style="zoom:150%;" />
-
+![还能再给力一点吗](/power.png)
 ​	有些常见的复杂结构，如扭结、莫比乌斯带和克莱因瓶等，却难以写出其普通方程（或者没有办法写出来、没有参考资料）。此时我们便要借助**参数方程（Parametric equation）**来描述这些几何结构。
 
 ​	参数方程就是利用一个或多个**参数**来描述一组**变量**的函数组合，通常可以用于表示复杂曲面和曲线等。举个例子，我们在高中就学过圆的参数方程：
