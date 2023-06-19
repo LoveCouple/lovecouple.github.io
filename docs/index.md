@@ -5,21 +5,15 @@ layout: home
 hero:
   name: "Script API Guide"
   text: "Minecraft Bedrock Script API Guide"
-  tagline: My great project tagline
+  tagline: Minecraft Script API 指南
   actions:
     - theme: brand
       text: Let's start
       link: /part1
     - theme: alt
-      text: Course List
+      text: Tutorial List
       link: /course
-
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-# ---
+    - theme: alt
+      text: Serein
+      link: https://github.com/LoveCouple/serein
 

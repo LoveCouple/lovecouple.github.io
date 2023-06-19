@@ -1,3 +1,7 @@
+---
+Author : Lampese
+---
+
 # 线性变换
 
 ### 为什么需要线性变换？
@@ -97,10 +101,6 @@ $$
 rotate(S,\alpha)=S\cdot \left[\begin{array}{c}\cos\alpha & 0 & \sin\alpha \\ 0& 1& 0  \\-\sin\alpha & 0 & \cos\alpha \\\end{array}\right]
 $$
 这就是线性代数在体素集合中参与线性变换的一些简单的例子，当然如果我们需要用代码来实现，需要预先准备一个底层抽象——**线性代数运算库**，笔者手动实现了一个可以满足自身需求的，读者也可以选用现有的很多优秀的开源库。
-
-
-___
-
 ## Canvas
 
 Canvas API(画布)是在 HTML5 中新增的标签用于在网页实时生成图像，并且可以操作图像内容，基本上它是一个可以用JavaScript操作的位图(bitmap)。
@@ -109,15 +109,13 @@ Canvas API(画布)是在 HTML5 中新增的标签用于在网页实时生成图�
 
 很幸运的是目前有 Canvas 转为 Space 的库，笔者引进了它并写了一个简单的代码框UI，目前可以采用 canvas 代码来绘制图像：
 
-<img src="https://github.com/CAIMEOX/VoxelGeometry/raw/webviewer/gallery/05.png" alt="qg" style="zoom: 50%;" />
-
-___
+![](https://github.com/CAIMEOX/VoxelGeometry/raw/webviewer/gallery/05.png)
 
 ## DLA (Diffusion Limited Aggression)
 
 扩散限制凝聚 Diffusion-limited Aggregation(DLA)，是由 Witten 和 Sander 于 1978 年共同提出来的，其基本思想是：首先置一初始粒子作为种子，在远离种子的任意位置随机产生一个粒子使其做无规行走，直至与种子接触，成为集团的一部分；然后再随机产生一个粒子，重复上述过程，这样就可以得到足够大的 DLA 团簇(cluster)。
 
-<img src="https://bkimg.cdn.bcebos.com/pic/0b55b319ebc4b74511f11e42c0fc1e178a821578?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5" alt="img" style="zoom:33%;" />
+![](/dla.png)
 
 该算法经常被用于模拟科学实验和绘制图像，我们也可以来实现一个。
 
@@ -214,10 +212,9 @@ function randPoint(width: number): number[] {
 
 实际上我们可以思考这个算法的实质，我们如果引入了温度的概念，就可以把温**度作为一个参量**加入点的行走，温度越高运动越大，温度越低运动越小，一个全部都是随机点的系统，随着温度的突然上升和缓慢下降，就会逐渐趋近于**稳态**，这就是热力学上**金属退火的原理**，在随机化算法中多有使用。
 
-![img](https://pic4.zhimg.com/80/v2-1f7f46012c6c1b8192dace26f173b127_720w.webp)
+![img](public/sa.jpeg)
 
 而实际上我们也可以把 Point 拓展到三维，这些可以由读者自行思考。
-___
 
 ## More
 
@@ -232,12 +229,6 @@ ___
 实际上上面的三个工作并非不重要，反而可能比本文所讲述的基础更加精彩，但涉及的知识和论文太多，读者感兴趣的可以来笔者的存储库自行探索。
 
 ![](/f1.png)
-
-
-<img src="https://pic1.zhimg.com/80/v2-8fec2d9267fedfe45070dfacb39cee74_720w.webp" alt="img" style="zoom: 33%;" /><img src="http://dl2.iteye.com/upload/attachment/0099/3521/f01e47b4-956a-3b94-853b-8a469283c9bc.png" alt="img" style="zoom: 25%;" />
-
-___
-
 ## 纯函数、核心分离、WebViewer
 
 ### 纯函数
@@ -309,8 +300,6 @@ graph LR;
 
 或者说我们可以不止把 WebViewer 限制在本地运行，可以用 rollup 打包成**在线运行**的版本挂载到 Github Pages...
 
-___
-
 ## 别玩抽象了，你能离谱点吗？
 
 是的我们可以，为了更好的编写这个库、并且让用户编写的命令不用如此冗长，我们又开了一个叫 **PureEval** 的项目，用来实现有关 js/ts 函数式编程的**一切**。比如我们的参数方程就可以很轻松的被抽象：
@@ -344,7 +333,4 @@ const run = Task((reject, resolve) => world.events.beforeChat.subscribe((e) => r
 
 ## 结语
 
-花了两天多的时间，终于把本文写完了。不知不觉就写了 6400 多字（似乎门槛有点高），Script API 的内容并不多，但是最重要的概念已经介绍了，剩下的内容也是大同小异，读者可以自己查阅文档了解更多 API。本文的目的更多的是希望读者能领会到函数式编程和几何的魅力，能够写出更易维护的 Script API 库，以及使用 serein 节省开发时间。——CAIMEO
-
-
-我的能力有限，仅补充了一些内容到 10000 多字，感谢各位阅读文章，如果错误还望指出。——Lampese
+我的能力有限，仅补充了一些内容到 10000 多字，感谢各位阅读文章，如果错误还望指出。

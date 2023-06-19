@@ -20,12 +20,12 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Course', link: '/course' }
+      { text: 'Tutorial', link: '/course' }
     ],
 
     sidebar: [
       {
-        text: 'Course List',
+        text: 'Tutorial List',
         items: [
           { text: '1. 写一个体素几何库', link: '/part1' },
           { text: '2. 线性变换', link: '/part2' }
@@ -34,7 +34,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/LoveCouple/sapi' },
     ]
   }
 })
