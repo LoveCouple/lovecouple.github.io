@@ -1,0 +1,32 @@
+{
+  "name": "sapi_guide",
+  "version": "1.0.0",
+  "description": "Script API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoveCouple/sapi_guide.git"
+  },
+  "author": "CAIMEO",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LoveCouple/sapi_guide/issues"
+  },
+  "homepage": "https://github.com/LoveCouple/sapi_guide#readme",
+  "devDependencies": {
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "mermaid": "^9.4.3",
+    "vitepress": "^1.0.0-beta.2",
+    "vitepress-plugin-mermaid": "^2.0.10"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}
