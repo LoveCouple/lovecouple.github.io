@@ -27,6 +27,7 @@ export default defineConfig({
       {
         text: 'Tutorial List',
         items: [
+          { text: '0. 快速入门', link: '/part0'},
           { text: '1. 写一个体素几何库', link: '/part1' },
           { text: '2. 线性变换', link: '/part2' }
         ]

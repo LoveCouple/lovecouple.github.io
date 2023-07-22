@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Let's start
-      link: /part1
+      link: /part0
     - theme: alt
       text: Tutorial List
       link: /course
