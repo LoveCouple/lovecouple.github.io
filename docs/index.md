@@ -8,10 +8,10 @@ hero:
   tagline: Minecraft Script API 指南
   actions:
     - theme: brand
-      text: Let's start
+      text: 快速开始
       link: /part0
     - theme: alt
-      text: Tutorial List
+      text: 课程列表
       link: /course
     - theme: alt
       text: Serein

@@ -10,7 +10,7 @@ export default defineConfig({
       },
     },
   },
-  title: "Script API Guide",
+  title: "Script API 指南",
   description: "Minecraft Bedrock Script API Guide",
   markdown: {
     config: (md) => {
@@ -19,18 +19,19 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Tutorial', link: '/course' }
+      { text: '主页', link: '/' },
+      { text: '课程', link: '/course' }
     ],
 
     sidebar: [
       {
-        text: 'Tutorial List',
+        text: '课程列表',
         items: [
-          { text: '0. 快速入门', link: '/part0'},
-          { text: '1. 写一个体素几何库', link: '/part1' },
-          { text: '2. 线性变换', link: '/part2' },
-          { text: '3. 待定', link: '/part3'}
+          { text: '0. 课程简介', link: '/course'},
+          { text: '1. 快速入门', link: '/part0'},
+          { text: '2. 写一个体素几何库', link: '/part1' },
+          { text: '3. 函子和线性变换', link: '/part2' },
+          { text: '4. 待定', link: '/part3'}
         ]
       }
     ],
