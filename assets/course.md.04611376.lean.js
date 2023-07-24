@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as a,U as t}from"./chunks/framework.5628684b.js";const m=JSON.parse('{"title":"Script API Tutorials","description":"","frontmatter":{},"headers":[],"relativePath":"course.md","filePath":"course.md"}'),i={name:"course.md"},l=t("",13),o=[l];function c(s,n,h,p,u,d){return r(),a("div",null,o)}const _=e(i,[["render",c]]);export{m as __pageData,_ as default};
